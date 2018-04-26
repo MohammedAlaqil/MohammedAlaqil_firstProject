@@ -12,7 +12,7 @@ public class CharityAssociation implements IOInterface {
 		
 	}
 	
-	public boolean addDonation (Donation d) {
+	public boolean insertDonation (Donation d) {
 		if(nbDonation < arrDonation.length) {
 			if(d instanceof Cash)
 				arrDonation[nbDonation] = new Cash ((Cash) d);
